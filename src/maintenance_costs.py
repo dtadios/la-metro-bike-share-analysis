@@ -1,7 +1,7 @@
 import pandas as pd
 
 def calculate_maintenance_costs(final_csv):
-    YEARLY_COST = 100
+    YEARLY_COST = 500
 
     df = pd.read_csv(final_csv)
     years = []
