@@ -10,7 +10,7 @@ def calculate_maintenance_costs(final_csv):
     for i in range(2020,2026):
         years.append(i)
         i_df = df[df['year'] == i]
-        i_count = i_df['bike_id'].count()
+        i_count = i_df['bike_id'].nunique()
         maintenance_costs.append(YEARLY_COST * i_count)
 
     maintenance_costs_df = pd.DataFrame({'year': years, 'Maintenance Costs': maintenance_costs})
