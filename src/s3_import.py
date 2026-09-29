@@ -4,12 +4,7 @@ def import_data():
     s3_client = boto3.client('s3')
     s3_resource = boto3.resource('s3')
 
-
-    response = s3_client.list_buckets()
-
-    for bucket in response['Buckets']:
-        print(bucket['Name'])
-
+    # checking what key to refer to to download csv file
     response = s3_client.list_objects_v2(Bucket='la-metro-bike-queries')
     objects = response.get('Contents', [])
 
