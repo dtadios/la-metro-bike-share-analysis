@@ -5,9 +5,6 @@ def process_data(csv_file):
     df = pd.read_csv(csv_file)
 
     df['passholder_type'] = df['passholder_type'].replace(['nan', 'NaN', ''], pd.NA)
-    df['passholder_type'] = df['passholder_type'].astype(str).str.strip().str.lower()
-
-    df = df[~df['passholder_type'].isna() & (df['passholder_type'] != 'testing')].copy()
 
     # adding revenue column based on duration and passholder_type
     # does not include flat rate for buying pass and 24-hour $5 start fee
@@ -16,10 +13,10 @@ def process_data(csv_file):
     # monthly Pass
     # annual
     passes = [
-        (df['passholder_type'] == 'walk-up'),
-        (df['passholder_type'] == 'one day pass'),
-        (df['passholder_type'] == 'monthly pass'), 
-        (df['passholder_type'] == 'annual pass')
+        (df['passholder_type'] == 'Walk-up'),
+        (df['passholder_type'] == 'One Day Pass'),
+        (df['passholder_type'] == 'Monthly Pass'), 
+        (df['passholder_type'] == 'Annual Pass')
     ]
     revenues = [
         3.5 * df['duration'],
@@ -33,5 +30,5 @@ def process_data(csv_file):
 
     # adding bike type and passholder pair column
     df['bike_pass_pair'] = df['bike_type'] + ',' + df['passholder_type']
-
-    return df.to_csv("final_bike_data.csv", index=False)
+    
+    return df.to_csv("final.csv", index=False)
