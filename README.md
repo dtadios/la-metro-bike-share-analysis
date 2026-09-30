@@ -1,6 +1,6 @@
 # LA Metro Bike Share Rental Analysis
 
-![LA Metro Bike Share Dashboard](Dashboard.png)
+![LA Metro Bike Share Dashboard](images/Dashboard.png)
 
 ## Project Overview
 
