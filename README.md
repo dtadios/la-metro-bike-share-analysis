@@ -107,35 +107,6 @@ The final processed data was connected to **Tableau Desktop** to build an intera
 
 ---
 
-## Python & Data Engineering Skills Demonstrated
-
-- **Data Cleaning & Transformation** with Pandas
-- **Feature Engineering** using Pandas and NumPy
-- **Automated Data Processing** through modular Python scripts
-- **AWS S3 Integration** using `boto3`
-- **Reading and Writing Large CSV Datasets**
-- **SQL Data Transformation** with Amazon Athena
-- **Combining Multi-Year Datasets**
-- **Cloud-Based Data Storage**
-- **Calculated Business Metrics**
-- **Data Pipeline Development**
-
----
-
-## Tableau Skills Demonstrated
-
-- **KPI Dashboard Design**
-- **Calculated Fields**
-- **Time-Series Analysis**
-- **Revenue and Profit Trend Visualization**
-- **Category and Segment Analysis**
-- **Pie Chart Visualization**
-- **Dashboard Containers and Layout Design**
-- **Interactive Data Visualization**
-- **Business Intelligence Storytelling**
-
----
-
 ## Key Metrics Visualized
 
 - **Total Unique Bikes**
