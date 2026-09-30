@@ -87,26 +87,6 @@ The final processed data was connected to **Tableau Desktop** to build an intera
 
 ---
 
-## Technical Details
-
-| **Aspect** | **Details** |
-|---|---|
-| **Tools Used** | Python, Pandas, NumPy, Tableau Desktop, Amazon S3, Amazon Athena, SQL |
-| **Cloud Platform** | Amazon Web Services (AWS) |
-| **Data Source** | LA Metro Bike Share public trip data |
-| **Analysis Period** | 2020–2025 |
-| **Processed Trips** | 2,065,008 |
-| **Unique Bikes** | 3,304 |
-| **Estimated Revenue** | $252,732,552 |
-| **Python Libraries** | Pandas, NumPy, boto3 |
-| **Storage** | Amazon S3 |
-| **SQL Query Engine** | Amazon Athena |
-| **Visualization Tool** | Tableau Desktop |
-| **Visual Types** | KPI Cards, Pie Chart, Time-Series Line Chart |
-| **Purpose** | Analyze bike-share usage and estimated financial performance while demonstrating an end-to-end cloud data analytics workflow |
-
----
-
 ## Key Metrics Visualized
 
 - **Total Unique Bikes**
